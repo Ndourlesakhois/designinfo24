@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 - image avec filtres</title>
+    <style>
+        img {
+            width: 600px;
+            filter: grayscale(100%);
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+
+        .ville {
+            color: darkolivegreen;
+            font-size:2em;
+            font-weight:bold;
+        }
+
+        .evenement {
+            color: cornflowerblue;
+            font-size:4em;
+        }
+
+        #p8 {
+            color: brown;
+            font-size:2em;
+        }
+
+        .fa-circle-play:hover {
+            color: brown;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <img src="https://raw.githubusercontent.com/ereyes/designinfo24/refs/heads/main/paris8.jpg" alt="Photo de Paris 8">
+
+    <h1>Histoire de Paris 8 <i onclick="responsiveVoice.speak('Histoire de Paris 8', 'French Female');" class="fa-solid fa-circle-play"></i></h1>
+
+    <p>
+        L’<span id="p8">université Paris 8 Vincennes - Saint-Denis</span>, créée en <span class="evenement">1969</span>, est l’héritière du Centre expérimental 
+        de Vincennes et de l’effervescence intellectuelle et pédagogique qui a suivi <span class="evenement">Mai 68</span>. Animée depuis 
+        par un esprit de démocratisation de l’accès au savoir et de productions de connaissances ancrées 
+        dans les enjeux du monde contemporain, elle est aujourd’hui un pôle d’enseignement et de recherche 
+        central en Île-de-France dans le domaine des humanités avec des sites à <span class="ville">Saint-Denis</span>, 
+        <span class="ville">Montreuil</span> et <span class="ville">Tremblay-en-France</span>.
+    </p>
+
+</body>
+</html>
